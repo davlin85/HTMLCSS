@@ -5,11 +5,16 @@ git init
 git remote add origin https://github.com/davlin85/demo.git
 
 
+
+
 #lägger till nya filer/ändrade filer till min locala git repository när du har gjort ändringar
 git add .
 
 #sparar alla ändringar till din local git repository, görs varje gång du gör ändringar
 git commit -m "lektion 1"
+
+
+
 
 
 # skicka upp alla filer till din remote repository, görs varje gång vid ändringar
