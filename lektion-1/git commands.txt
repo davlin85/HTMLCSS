@@ -7,7 +7,7 @@ git remote add origin https://github.com/davlin85/demo.git
 
 
 
-#lägger till nya filer/ändrade filer till min locala git repository när du har gjort ändringar
+# lägger till nya filer/ändrade filer till min locala git repository när du har gjort ändringar
 git add .
 
 #sparar alla ändringar till din local git repository, görs varje gång du gör ändringar
