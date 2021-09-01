@@ -1,0 +1,12 @@
+# skapar en ny local git repository ska göras vid nya projekt
+git init
+
+# lägg till en github remote repository för lagring i molnet, görs en gång per projekt.
+git remote add origin https://github.com/davlin85/demo.git
+
+
+#lägger till nya filer/ändrade filer till min locala git repository när du har gjort ändringar
+git add .
+
+#sparar alla ändringar till din local git repository, görs varje gång du gör ändringar
+git commit -m "lektion 1"
