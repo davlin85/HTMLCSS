@@ -18,5 +18,9 @@ git push origin master
 
 
 
-# för att hämta hem de senaster från din remote git repository
+# för att hämta min remote repository från min github, görs bara en gång.
+git clone https://github.com/davlin85/demo.git
+
+
+# för att hämta hem de senaste från din remote git repository
 git pull origin master
