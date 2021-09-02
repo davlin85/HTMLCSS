@@ -18,6 +18,5 @@ git push origin master
 
 
 
-
 # för att hämta hem de senaster från din remote git repository
 git pull origin master
