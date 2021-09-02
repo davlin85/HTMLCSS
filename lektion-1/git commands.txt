@@ -16,7 +16,6 @@ git commit -m "lektion 1"
 
 
 
-
 # skicka upp alla filer till din remote repository, görs varje gång vid ändringar
 git push origin master
 
