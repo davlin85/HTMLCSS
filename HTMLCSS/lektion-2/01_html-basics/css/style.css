@@ -1,8 +1,4 @@
 #body-background {
-    background: turquoise;
+    background: rgb(163, 184, 184);
 }
 
-.text-danger {
-    font-size: 52px;
-    color: blue
-}
