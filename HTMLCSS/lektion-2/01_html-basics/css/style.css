@@ -2,3 +2,40 @@
     background: rgb(163, 184, 184);
 }
 
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(90, 107, 107, var(--bs-bg-opacity)) !important;
+  }
+
+  .nav-link {
+      color: white !important
+  }
+
+  .nav-link:hover {
+      color: black !important
+  }
+
+#card-1 {
+    background-image: url("../img/mobile.jpg");
+    background-repeat: no-repeat;
+    width: 349px;
+    height: 444px; /*or your image's height*/
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    #card-1 {
+        background-image: url("../img/tablet.jpg");
+        width: 693px;
+        height: 1024px; /*or your image's height*/
+    }
+}
+@media (min-width: 1400px) {
+    #card-1 {
+        background-image: url("../img/desktop.jpg");
+        width: 1400px;
+        height: 1659px; /*or your image's height*/
+
+    }
+}
