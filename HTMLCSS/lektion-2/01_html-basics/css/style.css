@@ -15,6 +15,11 @@
       color: black !important
   }
 
+  ul li a:hover {
+    color: white !important;
+    background: #A3B8B8;
+  }
+
 #card-1 {
     background-image: url("../img/mobile.jpg");
     background-repeat: no-repeat;
@@ -36,11 +41,5 @@
         background-image: url("../img/desktop.jpg");
         width: 1400px;
         height: 1659px; /*or your image's height*/
-
     }
 }
-
-ul li a:hover {
-    color: white !important;
-    background: #899595;
-  }
