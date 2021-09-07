@@ -20,6 +20,18 @@
     background: #A3B8B8;
   }
 
+  .btn-dark:hover {
+    color: rgb(0, 0, 0) !important
+    --bs-bg-opacity: 1;
+    background-color: rgba(90, 107, 107, var(--bs-bg-opacity)) !important;
+  }
+
+  .btn-dark {
+    color: #fff;
+    background-color: #36393b;
+    border-color: #000000;
+
+
 #card-1 {
     background-image: url("../img/mobile.jpg");
     background-repeat: no-repeat;
