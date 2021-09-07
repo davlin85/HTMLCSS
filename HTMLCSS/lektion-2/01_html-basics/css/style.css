@@ -1,5 +1,5 @@
 #body-background {
-    background: rgb(163, 184, 184);
+    background: rgb(163, 184, 184) !important;
 }
 
 .bg-dark {
@@ -8,29 +8,29 @@
   }
 
   .nav-link {
-      color: white !important
+      color: white !important;
   }
 
   .nav-link:hover {
-      color: black !important
+      color: black !important;
   }
 
   ul li a:hover {
     color: white !important;
-    background: #A3B8B8;
+    background: #A3B8B8 !important;
   }
 
   .btn-dark:hover {
-    color: rgb(0, 0, 0) !important
-    --bs-bg-opacity: 1;
-    background-color: rgba(90, 107, 107, var(--bs-bg-opacity)) !important;
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(163, 184, 184) !important;
+    border-color: #000000 !important;
   }
 
   .btn-dark {
-    color: #fff;
-    background-color: #36393b;
-    border-color: #000000;
-
+    color: #fff !important;
+    background-color: #36393b !important;
+    border-color: #000000 !important;
+}
 
 #card-1 {
     background-image: url("../img/mobile.jpg");
@@ -48,6 +48,7 @@
         height: 1024px; /*or your image's height*/
     }
 }
+
 @media (min-width: 1400px) {
     #card-1 {
         background-image: url("../img/desktop.jpg");
