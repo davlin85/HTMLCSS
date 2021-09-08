@@ -3,7 +3,7 @@
 }
 
 .bg-dark {
-    --bs-bg-opacity: 1;
+    --bs-bg-opacity: 1 !important;
     background-color: rgba(90, 107, 107, var(--bs-bg-opacity)) !important;
   }
 
