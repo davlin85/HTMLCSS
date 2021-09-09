@@ -15,5 +15,40 @@ html, body {
     width: 100%;
     padding-left: 1rem;
     padding-top: 1rem;
+    padding-right: 1rem;
     
 }
+
+.box {
+    text-align: center;
+    border: 2px solid black;
+}
+
+#parent {
+    border: 10px solid green;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#child-1 {
+    flex:1;
+    border: 1px solid black;
+    order: 1;
+}
+
+#child-2 {
+    flex:1;
+    border: 1px solid black;
+    order: 3
+}
+
+#child-3 {
+    flex:1;
+    border: 1px solid black;
+    order: 2
+}
+
+
+@import url();
