@@ -42,7 +42,9 @@
     background-color: maroon;
     position: static;
     position: relative;
-    position: sticky;   
+    position: sticky;  
+    position: absolute; 
+    position: fixed;
 
     top: 0;
     left: 0;
