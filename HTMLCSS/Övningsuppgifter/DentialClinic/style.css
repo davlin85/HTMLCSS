@@ -18,7 +18,7 @@ a:hover {
     background-color: #ffffff;  
     display: grid;
     grid-gap: 0em;
-    grid-template-columns: repeat(12, 1fr)
+    grid-template-columns: repeat(12, 1fr);
 }
 
 .border {
