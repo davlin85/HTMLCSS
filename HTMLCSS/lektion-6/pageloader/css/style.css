@@ -31,7 +31,7 @@
 
 .animate {
     position: relative;
-    animation: bounds 0.8s infinite;
+    animation: bounds 0.5s infinite;
 
 }
 
