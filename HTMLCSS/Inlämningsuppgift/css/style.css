@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  color: #252525;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#topbar {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+#topbar .container-topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-bottom: 1px solid #E0E3EA;
+  padding: 1rem;
+}
+#topbar .logo {
+  margin: 0;
+  padding: 0;
+}
+#topbar .text {
+  font-weight: 900;
+  font-size: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+#topbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+#topbar .menu ul > li {
+  display: inline-block;
+  padding: 0 2rem;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: bold;
+}
+#topbar .menu ul > li a {
+  color: #252525;
+  text-decoration: none;
+}
+#topbar .menu ul > li a:hover {
+  color: #FF6803;
+}
+#topbar .search {
+  margin-top: 8px;
+  padding: 0;
+}
+#topbar button {
+  background-color: transparent;
+  border: 1px solid #FF6803;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 17px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+#topbar button:hover {
+  background-color: #FF6803;
+}
+@media (min-width: 768px) {
+  #topbar .container-topbar {
+    max-width: 718px;
+  }
+}
+@media (min-width: 992px) {
+  #topbar .container-topbar {
+    max-width: 942px;
+  }
+}
+@media (min-width: 1200px) {
+  #topbar .container-topbar {
+    max-width: 1120px;
+  }
+}
+@media (min-width: 1400px) {
+  #topbar .container-topbar {
+    max-width: 1300px;
+  }
+}
+@media (max-width: 1400px) {
+  #topbar button {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  #topbar .search {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  #topbar .menu ul > li {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  #topbar .container-topbar {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  #topbar .text {
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
+@media (max-width: 500px) {
+  #topbar .menu ul > li {
+    font-size: 12px;
+    padding: 0 0.7rem;
+  }
+}

@@ -1,0 +1,87 @@
+#topbar {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+
+    .container-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border-bottom: 1px solid #E0E3EA;
+        padding: 1rem;
+    }   
+
+    .logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        font-weight: 900;
+        font-size: 30px;
+        flex-grow: 1;
+    }
+
+    .menu ul{
+        display: flex;
+        list-style: none;
+    
+        > li {
+            display: inline-block;
+            padding: 0 2rem;
+            font-family: 'Roboto';
+            font-size: 17px;
+            font-weight: bold;
+    
+            & a {
+                color: #252525;
+                text-decoration: none;
+            }
+    
+            a:hover {
+                color: #FF6803;
+            }
+        }
+    }
+
+    .search {
+        margin-top: 8px;
+        padding: 0;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid #FF6803;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 17px;
+        padding: 0.6rem 1.5rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 1.5rem;
+    }
+
+    button:hover {
+        background-color: #FF6803;
+    }
+
+    @media (min-width: 768px) { .container-topbar { max-width: 718px; }}
+    @media (min-width: 992px) { .container-topbar { max-width: 942px; }}
+    @media (min-width: 1200px) { .container-topbar { max-width: 1120px; }}
+    @media (min-width: 1400px) { .container-topbar { max-width: 1300px; }}
+
+    @media (max-width: 1400px) { button { display: none; }}
+    @media (max-width: 1400px) { .search { display: none; }}
+    @media (max-width: 1200px) { .menu ul > li { padding: 0 1rem;}}
+
+    @media (max-width: 1000px) { .container-topbar { flex-wrap: wrap; justify-content: center;}}
+    @media (max-width: 1000px) { .text { align-self: center; flex-grow: 0;}}
+    @media (max-width: 500px) { .menu ul>li { font-size: 12px; padding: 0 0.7rem;}}
+    
+}
