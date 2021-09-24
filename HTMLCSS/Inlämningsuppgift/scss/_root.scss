@@ -7,8 +7,12 @@
 }
 
 html, body {
-    font-family: 'Poppins', 'Roboto', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     color: #252525;
+    background-image: url(../BG.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
 }
 
 .border {

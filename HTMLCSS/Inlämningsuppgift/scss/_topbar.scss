@@ -1,10 +1,11 @@
 #topbar {
+    background-color: transparent;
     list-style: none;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 99;
     width: 100%;
-
+    
     .container-topbar {
         display: flex;
         justify-content: space-between;
@@ -17,26 +18,25 @@
         padding: 1rem;
     }   
 
-    .logo {
+    .topbar-logo {
         margin: 0;
         padding: 0;
     }
 
-    .text {
+    .topbar-text {
         font-weight: 900;
         font-size: 30px;
         flex-grow: 1;
     }
 
-    .menu ul{
+    .topbar-menu ul{
         display: flex;
         list-style: none;
     
         > li {
-            display: inline-block;
-            padding: 0 2rem;
+            padding: 0 1.8rem;
             font-family: 'Roboto';
-            font-size: 17px;
+            font-size: 1.063rem;
             font-weight: bold;
     
             & a {
@@ -50,7 +50,7 @@
         }
     }
 
-    .search {
+    .topbar-search {
         margin-top: 8px;
         padding: 0;
     }
@@ -77,11 +77,11 @@
     @media (min-width: 1400px) { .container-topbar { max-width: 1300px; }}
 
     @media (max-width: 1400px) { button { display: none; }}
-    @media (max-width: 1400px) { .search { display: none; }}
-    @media (max-width: 1200px) { .menu ul > li { padding: 0 1rem;}}
+    @media (max-width: 1400px) { .topbar-search { display: none; }}
+    @media (max-width: 1200px) { .topbar-menu ul > li { padding: 0 1rem;}}
 
     @media (max-width: 1000px) { .container-topbar { flex-wrap: wrap; justify-content: center;}}
-    @media (max-width: 1000px) { .text { align-self: center; flex-grow: 0;}}
-    @media (max-width: 500px) { .menu ul>li { font-size: 12px; padding: 0 0.7rem;}}
+    @media (max-width: 1000px) { .topbar-text { align-self: center; flex-grow: 0;}}
+    @media (max-width: 500px) { .topbar-menu ul>li { font-size: 12px; padding: 0 0.7rem;}}
     
 }
