@@ -8,7 +8,6 @@
     grid-template-rows: repeat(10, 1fr);
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
@@ -21,7 +20,6 @@
    font-size: 60px;
    font-weight: bold;
    line-height: 4rem;
- 
 }
 
 .home-img {
@@ -43,3 +41,9 @@
 
 @media (max-width: 1700px) { .home-text { grid-column: 1/25; grid-row: 1/2; margin-top: 5rem; text-align: center;}}
 @media (max-width: 1700px) { .home-img { grid-column: 3/25; grid-row: 2/9; }}
+
+
+@media (max-width: 375px) { }
+@media (max-width: 768px) { }
+@media (max-width: 1024px) { }
+@media (max-width: 1700px) { }
