@@ -55,7 +55,7 @@
         padding: 0;
     }
 
-    button {
+    .btn-topbar {
         background-color: transparent;
         border: 1px solid #FF6803;
         font-family: 'Roboto';
@@ -67,7 +67,7 @@
         margin-left: 1.5rem;
     }
 
-    button:hover {
+    .btn-topbar:hover {
         background-color: #FF6803;
     }
 
@@ -75,6 +75,8 @@
     @media (min-width: 992px) { .container-topbar { max-width: 942px; }}
     @media (min-width: 1200px) { .container-topbar { max-width: 1120px; }}
     @media (min-width: 1400px) { .container-topbar { max-width: 1300px; }}
+   
+    
 
     @media (max-width: 1400px) { button { display: none; }}
     @media (max-width: 1400px) { .topbar-search { display: none; }}
