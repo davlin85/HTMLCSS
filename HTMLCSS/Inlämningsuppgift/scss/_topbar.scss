@@ -6,7 +6,7 @@
     z-index: 99;
     width: 100%;
     
-    .container-topbar {
+    .container-topbar { 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -48,11 +48,11 @@
                 color: #FF6803;
             }
         }
-    }
 
-    .topbar-search {
-        margin-top: 8px;
-        padding: 0;
+        .topbar-search {
+            margin-top: 8px;
+            padding: 0;
+        }
     }
 
     .btn-topbar {
@@ -74,7 +74,7 @@
     @media (min-width: 768px) { .container-topbar { max-width: 718px; }}
     @media (min-width: 992px) { .container-topbar { max-width: 942px; }}
     @media (min-width: 1200px) { .container-topbar { max-width: 1120px; }}
-    @media (min-width: 1400px) { .container-topbar { max-width: 1300px; }}
+    @media (min-width: 1400px) { .container-topbar { max-width: 1200px; }}
    
     
 
