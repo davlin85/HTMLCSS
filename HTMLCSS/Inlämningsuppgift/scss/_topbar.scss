@@ -46,6 +46,7 @@
     
             a:hover {
                 color: #FF6803;
+
             }
         }
 
@@ -70,20 +71,4 @@
     .btn-topbar:hover {
         background-color: #FF6803;
     }
-
-    @media (min-width: 768px) { .container-topbar { max-width: 718px; }}
-    @media (min-width: 992px) { .container-topbar { max-width: 942px; }}
-    @media (min-width: 1200px) { .container-topbar { max-width: 1120px; }}
-    @media (min-width: 1400px) { .container-topbar { max-width: 1200px; }}
-   
-    
-
-    @media (max-width: 1400px) { button { display: none; }}
-    @media (max-width: 1400px) { .topbar-search { display: none; }}
-    @media (max-width: 1200px) { .topbar-menu ul > li { padding: 0 1rem;}}
-
-    @media (max-width: 1000px) { .container-topbar { flex-wrap: wrap; justify-content: center;}}
-    @media (max-width: 1000px) { .topbar-text { align-self: center; flex-grow: 0;}}
-    @media (max-width: 500px) { .topbar-menu ul>li { font-size: 12px; padding: 0 0.7rem;}}
-    
 }

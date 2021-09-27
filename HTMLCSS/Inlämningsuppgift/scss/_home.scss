@@ -1,6 +1,7 @@
 #home {
-    margin: 0;
-    
+        margin: 0;
+        padding: 0;
+        
     .container-home {
         display: flex;
         justify-content: space-between;
@@ -52,14 +53,9 @@
         border-radius: 5px;
         cursor: pointer;
     }
+
+    .btn-home:hover {
+        box-shadow: 0 4px 15px 2px rgba(49, 63, 78, 0.411);
+    }
 }
-
-
-
-
-
-@media (min-width: 768px) { .container-home { max-width: 768px; }}
-@media (min-width: 992px) { .container-home { max-width: 9992px; }}
-@media (min-width: 1200px) { .container-home { max-width: 1120px; }}
-@media (min-width: 1400px) { .container-home { max-width: 1200px; }}
 
