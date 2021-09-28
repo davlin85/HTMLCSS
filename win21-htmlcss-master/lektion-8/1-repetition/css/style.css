@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -433,12 +432,8 @@ html, body {
 }
 
 #navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 #navbar .navbar-brand img {
   width: 200px;
@@ -450,14 +445,10 @@ html, body {
 }
 #navbar .navbar-links {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 @media (min-width: 992px) {
   #navbar .navbar-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
