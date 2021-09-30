@@ -10,7 +10,7 @@
         margin-right: auto;
         margin-top: 10rem;
         grid-gap: 0rem 0rem;
-        background-image: url(../Map.png);
+        background-image: url(../img/map.svg);
         background-repeat: no-repeat;
         background-position: 50% 100%;
         text-align: center;
@@ -21,6 +21,7 @@
                 font-weight: 400;
                 color: #57647C;
                 text-align: center;
+                margin-top: 0.5rem;
             }
     }
 
@@ -38,6 +39,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         font-weight: 400;
+        color: #57647C;
     }
 
     .contact-downloaded {
@@ -110,6 +112,7 @@
     padding: 1rem 2.2rem;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 0.5rem;
 }
 
 .btn-contact:hover {
