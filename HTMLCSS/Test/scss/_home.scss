@@ -1,0 +1,104 @@
+@import "./mixin";
+
+
+#home {
+        margin: 0;
+        padding: 0;
+        
+    .container-home {
+        @include flex;
+        @include for-mobile {
+            flex-direction: wrap;
+        }
+    }
+    
+    .home-text {
+        position: absolute;
+        z-index: 2;
+        font-size: 60px;
+        text-align: left;
+        font-family: $poppins;
+        font-weight: bold;
+        line-height: 4rem;
+        flex-grow: 2;
+        width: 500px;
+        
+        @include for-mobile {
+            font-size: 30px;
+            margin-top: 200px;
+            text-align: center;
+            width: 347px;
+            line-height: 2rem;
+            margin-left: 1rem;
+        }
+
+        @include for-tablet {
+            font-size: 40px;
+            margin-top: 210px;
+            text-align: center;
+            width: 700px;
+            line-height: 2rem;
+            margin-left: 1rem;
+        }
+
+        p {
+            @include p;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            @include for-mobile {
+                font-size: 12px;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 1.2rem;
+            }
+
+            @include for-tablet {
+                font-size: 17px;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 1.2rem;
+            }
+            
+        }
+      
+    }
+
+    .home-img {
+        position: relative;
+        top: 0;
+        left: 550px;
+        z-index: 1;
+        margin-top: 2rem;
+        padding: 0;
+
+        @include for-mobile {
+            display: none;
+        }
+
+        @include for-tablet {
+            display: none;
+        }
+    }
+    
+    .btn-home {
+        @include btn;
+
+        @include for-mobile {
+            font-size: 10px;
+            padding: 0.7rem 1rem;
+        }
+
+        @include for-tablet {
+            font-size: 15px;
+            padding: 0.7rem 1rem;
+        }
+    }
+
+    .btn-home:hover {
+        box-shadow: $box-shadow;
+    }
+}
+

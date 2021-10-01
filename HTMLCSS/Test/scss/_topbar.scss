@@ -1,0 +1,123 @@
+@import "./mixin";
+
+
+#topbar {
+    background-color: $bgcolor;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    
+    .container-topbar { 
+        @include flex;
+        gap: 1rem;
+        position: relative;
+        border-bottom: 1px solid $light-gray;
+        padding: 1rem;
+
+        @include for-mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include for-tablet {
+            flex-wrap: wrap;
+            align-content: center;
+            padding: rem;
+        }
+    }   
+
+    .topbar-logo {
+        margin: 0;
+        padding: 0;
+
+        @include for-mobile {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        @include for-tablet {
+            flex-grow: 1;
+            text-align: right;
+            padding: 1rem;
+        }
+    }
+
+    .topbar-text {
+        font-family: $poppins;
+        font-weight: 900;
+        font-size: 30px;
+        flex-grow: 1;
+
+        @include for-tablet {
+            font-size: 40px;
+        }
+    }
+
+    .topbar-menu ul{
+        @include flex;
+        list-style: none;
+    
+        & > li {
+            font-family: $roboto;
+            font-size: 1.063rem;
+            font-weight: 600;
+            color: $dark;
+            padding: 0rem 1.5rem;
+
+            @include for-mobile {
+                padding: 0rem 0.85rem;
+            }
+            
+            a {
+                color: $dark;
+                text-decoration: none;
+
+                @include for-mobile {
+                    font-size: 12px;
+                }
+
+                @include for-tablet {
+                    font-size: 18px;
+                    padding: 0rem 0.8rem;
+                    text-align: center;
+                }
+            }
+            a:hover {
+                color: $orange;
+            }
+        }
+
+    }
+
+    .topbar-search {
+        margin-top: 8px;
+        padding: 0;
+        
+        @include for-mobile {
+            display: none;
+        }
+
+        @include for-tablet {
+            display: none;
+        }
+    }
+
+    .btn-topbar {
+        @include btn-topbar;
+
+        @include for-mobile {
+            display: none;
+        }
+
+        @include for-tablet {
+            display: none;
+        }
+    }
+
+    .btn-topbar:hover {
+        background-color: $orange;
+        box-shadow: $box-shadow;
+    }
+}

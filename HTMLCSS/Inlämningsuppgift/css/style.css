@@ -14,10 +14,6 @@ html, body {
   background-attachment: fixed;
 }
 
-.border {
-  border: 1px solid black;
-}
-
 #topbar {
   background-color: rgba(248, 249, 254, 0.85);
   list-style: none;
@@ -558,6 +554,14 @@ html, body {
     flex-grow: 1;
     text-align: center;
   }
+
+  .btn-topbar {
+    display: none;
+  }
+
+  .topbar-search {
+    display: none;
+  }
 }
 @media (min-width: 300px) and (max-width: 500px) {
   .container-home {
@@ -871,14 +875,20 @@ html, body {
     flex-wrap: wrap;
     align-content: center;
   }
-}
-@media (min-width: 600px) and (max-width: 800px) {
+
+  .btn-topbar {
+    display: none;
+  }
+
+  .topbar-search {
+    display: none;
+  }
+
   .topbar-logo {
     flex-grow: 1;
     text-align: right !important;
   }
-}
-@media (min-width: 600px) and (max-width: 800px) {
+
   .topbar-menu ul > li > a {
     font-size: 17px;
     padding: 0rem 0.8rem;
@@ -889,8 +899,7 @@ html, body {
   .home-img {
     display: none;
   }
-}
-@media (min-width: 600px) and (max-width: 800px) {
+
   .home-text {
     font-size: 35px !important;
     margin-top: 210px;
@@ -907,8 +916,7 @@ html, body {
     margin-bottom: 0rem !important;
     line-height: 1.2rem !important;
   }
-}
-@media (min-width: 600px) and (max-width: 800px) {
+
   .home-text p {
     font-size: 15px !important;
   }
@@ -1202,15 +1210,5 @@ html, body {
     font-size: 15px !important;
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-}
-@media (max-width: 1400px) {
-  .btn-topbar {
-    display: none;
-  }
-}
-@media (max-width: 1400px) {
-  .topbar-search {
-    display: none;
   }
 }

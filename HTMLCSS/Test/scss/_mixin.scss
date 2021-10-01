@@ -1,0 +1,76 @@
+@import "./variables";
+
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin grid {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin btn-topbar {
+    background-color: transparent;
+    border: 1px solid $orange;
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+@mixin btn {
+    background: $red;
+    background: linear-gradient(90deg, $red 50%, $orange 100%, $light-orange 100%);
+    font-family: $roboto;
+    border: 0;
+    color: $light;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 1.1rem 2.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin p {
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: $gray;
+}
+
+@mixin span {
+    font-family: $poppins;
+    font-size: 14px;
+    color: $orange;
+    font-weight: 400;
+}
+
+@mixin blog-box {
+    background: $light;
+    border: 0px solid $light;
+    border-radius: 5px;
+    box-shadow: $box-shadow-contact;
+    transition: box-shadow 0.15s ease-in-out;
+    background-color: $light;
+    font-size: 21px;
+    font-weight: 900;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+@mixin for-mobile {
+    @media (max-width: 380px) { @content; }
+  }
+  @mixin for-tablet {
+    @media (min-width: 768px) and (max-width: 1030px) { @content; }
+  } 
