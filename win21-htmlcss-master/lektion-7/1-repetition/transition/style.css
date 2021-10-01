@@ -1,9 +1,0 @@
-.fa-sync-alt {
-    margin: 1rem;
-    font-size: 5rem;
-    transition: transform 2s ease-in;
-    transform: rotateZ(0);
-}
-.fa-sync-alt:hover {
-    transform: rotateZ(360deg);  
-}
