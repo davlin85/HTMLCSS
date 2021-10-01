@@ -1,37 +1,71 @@
+@import "./mixin";
+
+
 #home {
         margin: 0;
         padding: 0;
         
     .container-home {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .home-text {
-       position: absolute;
-       z-index: 2;
-       font-size: 60px;
-       text-align: left;
-       font-weight: bold;
-       line-height: 4rem;
-       flex-grow: 2;
-       width: 500px;
-    
-       p {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        text-align: left;
-        color: #57647C;
+        @include flex;
+        @include for-mobile {
+            flex-direction: wrap;
         }
     }
     
+    .home-text {
+        position: absolute;
+        z-index: 2;
+        font-size: 60px;
+        text-align: left;
+        font-family: $poppins;
+        font-weight: bold;
+        line-height: 4rem;
+        flex-grow: 2;
+        width: 500px;
+        
+        @include for-mobile {
+            font-size: 30px;
+            margin-top: 200px;
+            text-align: center;
+            width: 347px;
+            line-height: 2rem;
+            margin-left: 1rem;
+        }
+
+        @include for-tablet {
+            font-size: 40px;
+            margin-top: 210px;
+            text-align: center;
+            width: 700px;
+            line-height: 2rem;
+            margin-left: 1rem;
+        }
+
+        p {
+            @include p;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            @include for-mobile {
+                font-size: 12px;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 1.2rem;
+            }
+
+            @include for-tablet {
+                font-size: 17px;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 1.2rem;
+            }
+            
+        }
+      
+    }
+
     .home-img {
         position: relative;
         top: 0;
@@ -39,23 +73,32 @@
         z-index: 1;
         margin-top: 2rem;
         padding: 0;
+
+        @include for-mobile {
+            display: none;
+        }
+
+        @include for-tablet {
+            display: none;
+        }
     }
     
     .btn-home {
-        background: rgb(242,55,121);
-        background: linear-gradient(90deg, rgba(242,55,121,1) 50%, rgba(255,104,3,1) 100%, rgba(255,166,46,1) 100%);
-        font-family: 'Roboto';
-        border: 0;
-        color: #fff;
-        font-weight: 700;
-        font-size: 16px;
-        padding: 1.1rem 2.2rem;
-        border-radius: 5px;
-        cursor: pointer;
+        @include btn;
+
+        @include for-mobile {
+            font-size: 10px;
+            padding: 0.7rem 1rem;
+        }
+
+        @include for-tablet {
+            font-size: 15px;
+            padding: 0.7rem 1rem;
+        }
     }
 
     .btn-home:hover {
-        box-shadow: 0 4px 15px 2px rgba(49, 63, 78, 0.411);
+        box-shadow: $box-shadow;
     }
 }
 
